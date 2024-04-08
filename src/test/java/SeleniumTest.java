@@ -21,6 +21,9 @@ public class Seleniumtest {
     public static void AmazonLaunching() {
         options = new ChromeOptions();
         options.addArguments("--remote-allow-origins=*");
+        options.addArguments("--no-sandbox");
+        options.addArguments("--disable-dev-shm-usage");
+        options.addArguments("--headless");
         //System.setProperty("WebDriver.chrome.driver", "/home/Desktop/maven/mavenproject/src/test/resources/chromedriver");
         driver = new ChromeDriver(options);
         driver.get("https://www.amazon.in/");
