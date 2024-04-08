@@ -21,7 +21,7 @@ public class Seleniumtest {
     public static void AmazonLaunching() {
         options = new ChromeOptions();
         options.addArguments("--remote-allow-origins=*");
-        System.setProperty("WebDriver.chrome.driver", "/home/Desktop/maven/mavenproject/src/test/resources/chromedriver");
+        //System.setProperty("WebDriver.chrome.driver", "/home/Desktop/maven/mavenproject/src/test/resources/chromedriver");
         driver = new ChromeDriver(options);
         driver.get("https://www.amazon.in/");
         driver.manage().window().maximize();
